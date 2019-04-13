@@ -23,7 +23,7 @@ class APIManager: Alamofire.SessionManager {
     }()
 
     static let background: APIManager = {
-        let configuration = URLSessionConfiguration.background(withIdentifier: "com.dexgreen.dexgreen")
+        let configuration = URLSessionConfiguration.background(withIdentifier: "com.myapi.task")
         return APIManager(configuration: configuration)
     }()
 }
